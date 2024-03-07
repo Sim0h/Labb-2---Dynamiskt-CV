@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="CSS/Style.CSS">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Portfolio</h1></header>
+        <nav class="navbar">
+            <a href="index.html">Home <i class="fa fa-home"></i></a>
+            <a href="about-me.html">CV <i class="fa fa-clipboard"></i></a>
+            <a href="portfolio.html">Portfolio <i class="fa fa-archive"></i></a>
+            <a href="placeholder.html">Placeholder <i class="fa fa-male"></i></a> 
+            <a href="contact.html">Contact <i class='fa fa-address-book'></i></a>
+        </nav>
+    <div class="portfolio">
+        <div class="project">
+            <h2>Bank Application</h2>
+            <img src="image\icons8-c-sharp-logo-250.png" alt="Projekt 1">
+            <label class="info-btn" for="modal1-checkbox">Mer information</label>
+        </div>
+        <div class="project">
+            <h2>Database Project</h2>
+            <img src="image\icons8-c-sharp-logo-250.png" alt="Projekt 2">
+            <label class="info-btn" for="modal2-checkbox">Mer information</label>
+          </div>
+          <div class="project">
+            <h2>Collection Generics</h2>
+            <img src="image\icons8-c-sharp-logo-250.png" alt="Projekt 3">
+            <label class="info-btn" for="modal3-checkbox">Mer information</label>
+          </div>
+      </div>
+      
+      <input type="checkbox" id="modal1-checkbox">
+      <div class="modal">
+        <label class="modal-background" for="modal1-checkbox"></label>
+        <div class="modal-content">
+          <label class="close-btn" for="modal1-checkbox">&times;</label>
+          <h2>Bank Application</h2>
+          <h5>Här är mer information om projekt 1.</h5>
+          <p>Bank Application var vår sista uppgift i vår kurs Objektorienterad programmering. Detta utfördes i grupp och vår uppgift var att ta fram en Bank Applikation i ett Consol program. 
+            För mer info om hur koden ser ut, vänligen <a href ="https://github.com/Mad02Max/Syntax-Squad.git" target="_blank">klicka här.</a></p>
+        </div>
+      </div>
+
+      <input type="checkbox" id="modal2-checkbox">
+      <div class="modal">
+        <label class="modal-background" for="modal2-checkbox"></label>
+        <div class="modal-content">
+            <label class="close-btn" for="modal2-checkbox">&times;</label>
+            <h2>Database Project</h2>
+            <h5>Här är mer information om projekt 1.</h5>
+                <p>Database Project var vår sista uppgift i kursen Databasutveckling och Databasadministration. Uppgiften har som grund att det är en databas för en Skola. Där man ska kunna kontrollera antal anställda och även justera betyg för elever. 
+                    Delar av koden finns i en Query till SSMS men för mer info om hur C#-koden ser ut, vänligen <a href ="https://github.com/Sim0h/Labb-4---Indivituellt_Databasprojekt.git" target="_blank">klicka här.</a></p>
+        </div>
+    </div>
+
+    <input type="checkbox" id="modal3-checkbox">
+      <div class="modal">
+        <label class="modal-background" for="modal3-checkbox"></label>
+        <div class="modal-content">
+            <label class="close-btn" for="modal3-checkbox">&times;</label>
+            <h2>Collection Generics</h2>
+            <h5>Här är mer information om projekt 1.</h5>
+                <p>Collection Generics var vår 4e Labb i kursen Objektorienterad programmering. Vi skulle enekelt skapa klasser och objekt och via dessa hantera både Stack och List.
+                  För mer information om koden, vänligen <a href ="https://github.com/Sim0h/Labb-4---Collection-Generics.git" target="_blank">klicka här.</a></p>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <p>2024 Simon Ståhl CV. All rights are mine</p>
+    </footer>
+</body>
+</html>
