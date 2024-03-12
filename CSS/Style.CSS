@@ -5,7 +5,7 @@
     top: 80px; 
     left: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 2;
 }
 
 .navbar a {
@@ -27,6 +27,7 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    background-color: #f3f4f6;
 }
 
 header {
@@ -55,7 +56,7 @@ header h1{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f3f4f6;
+    
 }
 
 .contact-info {
@@ -106,7 +107,7 @@ header h1{
     text-align: center;
     background-color: #333; 
     position: absolute;
-    z-index: 999;
+    z-index: 1;
     bottom: 0;
     width:100%;
     color: rgba(255, 255, 255, 0.822)
@@ -130,6 +131,7 @@ header h1{
     display: flex;
     flex-direction: column; 
     width: 70%; 
+    height: 30%;
     
 }
 
@@ -153,6 +155,12 @@ header h1{
     font-weight: 500;
     font-style: normal;
 }
+
+.right-lower-column ul{
+    font-size: 1.2rem;
+    word-spacing: 1rem;
+}
+
 
 .indexBGP {
     position: relative;
@@ -285,7 +293,7 @@ header h1{
 .modal-background {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 100%;
@@ -296,7 +304,7 @@ header h1{
 .modal-content {
     display: none;
     position: fixed;
-    z-index: 2;
+    z-index: 4;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -336,6 +344,10 @@ header h1{
     display: none;
 }
 
+#modalCheckbox:checked + .modal .modal-background,
+#modalCheckbox:checked + .modal .modal-content {
+    display: block;
+}
 .project img{
     width: auto;
     height: 200px;
