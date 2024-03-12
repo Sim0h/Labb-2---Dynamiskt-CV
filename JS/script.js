@@ -38,12 +38,44 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.style.display = "block";
         modalBackground.style.display = "block";
     
+        // Additionally, display the modal content
+        const modalContent = modal.querySelector('.modal-content');
+        modalContent.style.display = "block";
+    
         window.onclick = function (event) {
             if (event.target == modalBackground) {
                 modal.style.display = "none";
                 modalBackground.style.display = "none";
+                modalContent.style.display = "none"; // Hide modal content when modal is closed
             }
         }
     }
 
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('about-me.json')
+      .then(response => response.json())
+      .then(data => {
+        visaCV(data);
+      })
+      .catch(error => console.error('Fel vid inläsning av CV:', error));
+  });
+  
+  function visaCV(cv) {
+    const utbildningElement = document.getElementById('utbildningar');
+    cv.utbildningar.forEach(utbildning => {
+      const utbildningItem = document.createElement('ul');
+      utbildningItem.textContent = `${utbildning.school} - ${utbildning.field} - ${utbildning.dates}`;
+      utbildningElement.appendChild(utbildningItem);
+    });
+  
+    const arbetsplatsElement = document.getElementById('arbetsplatser');
+    cv.arbetsplatser.forEach(arbetsplats => {
+      const arbetsplatsItem = document.createElement('ul');
+      arbetsplatsItem.textContent = `${arbetsplats.position} - ${arbetsplats.company} - ${arbetsplats.dates}`;
+      arbetsplatsElement.appendChild(arbetsplatsItem);
+});
+}
+
+

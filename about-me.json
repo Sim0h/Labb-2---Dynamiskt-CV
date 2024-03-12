@@ -1,0 +1,30 @@
+
+{
+    "arbetsplatser": [
+        {
+            "position": "Projektledare",
+            "company": "Strängbetong",
+            "dates": "2018-2023"
+        },
+
+        {
+            "position": "Projekteringsledare",
+            "company": "Strängbetong",
+            "dates": "2017-2018"
+        }
+    ],
+
+    "utbildningar": [
+        {
+            "school": "Campus Varberg",
+            "field": "Systemutveckling.NET",
+            "dates": "2023-2025"
+        },
+
+        {
+            "school": "Halmstad Högskola",
+            "field": "Byggnadsingenjör",
+            "dates": "2014-2017"
+        }
+    ]
+}  
